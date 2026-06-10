@@ -626,3 +626,121 @@ margin-left: 80px;
     height: 220px;
   }
 }
+
+/* MOBILE QUICK FIX */
+@media (max-width: 768px) {
+
+  html, body {
+    width: 100%;
+    overflow-x: hidden !important;
+  }
+
+  main {
+    height: auto !important;
+    overflow-y: visible !important;
+  }
+
+  nav {
+    overflow-x: auto !important;
+    width: 100%;
+  }
+
+  nav ul {
+    justify-content: flex-start !important;
+    gap: 24px !important;
+    padding: 16px !important;
+    width: max-content !important;
+  }
+
+  nav a {
+    font-size: 18px !important;
+  }
+
+  article {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 100vh !important;
+    padding: 40px 20px !important;
+    display: block !important;
+    overflow: hidden !important;
+  }
+
+  article h2,
+  #article1 h2,
+  #article2 h2,
+  #article3 h2,
+  #article4 h2,
+  #article5 h2 {
+    font-size: 42px !important;
+    margin: 30px 0 !important;
+    text-align: center !important;
+  }
+
+  article h3,
+  #article1 h3,
+  #article2 h3,
+  #article3 h3,
+  #article4 h3,
+  #article5 h3 {
+    font-size: 28px !important;
+    margin: 20px 0 !important;
+    text-align: center !important;
+    position: static !important;
+  }
+
+  article p,
+  #article2 p,
+  .box {
+    font-size: 18px !important;
+    margin: 20px auto !important;
+    max-width: 90% !important;
+    text-align: center !important;
+  }
+
+  .thai-frau,
+  .thai-frau1,
+  .wat-siri,
+  .mango-sticky,
+  .pad-kra,
+  .tom-yum {
+    position: static !important;
+    width: 80% !important;
+    max-width: 300px !important;
+    height: auto !important;
+    margin: 20px auto !important;
+    display: block !important;
+  }
+
+  .food-gallery {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 24px !important;
+    align-items: center !important;
+  }
+
+  .food-item img {
+    width: 220px !important;
+    height: auto !important;
+  }
+
+  .slider {
+    width: 100% !important;
+    padding: 20px 10px !important;
+  }
+
+  .slider-track .slide {
+    flex: 0 0 100% !important;
+  }
+
+  .slider-track .slide img,
+  .slide img {
+    width: 220px !important;
+    height: 260px !important;
+    object-fit: cover !important;
+  }
+
+  .booking-section h2 {
+    font-size: 32px !important;
+  }
+
+}
