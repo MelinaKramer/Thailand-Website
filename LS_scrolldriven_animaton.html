@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scroll-Snap Boilerplate</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Sticky Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#article1">Thailand</a></li>
+      <li><a href="#article2">Thai Tradition</a></li>
+      <li><a href="#article3">Thai Food</a></li>
+      <li><a href="#article4">Thai Nature</a></li>
+      <li><a href="#article5">Thai Places</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <article id="article1">
+      <h2>THAILAND</h2>
+      <h3>สวัสดี</h3>
+      <!-- <h3>Arnold-Bode-Schule Scroll Event Boilerplatte</h3>
+      <p>Platzhaltertext für Artikel 1. Hier könnte Ihr Inhalt stehen.</p> -->
+      <img src="betendethai.png" alt="Betende thailändische Frau" class="thai-frau">
+      <img src="betendethai1.png" alt="betende thailändische frau1" class="thai-frau1">
+    </article>
+
+    <article id="article2">
+      <h2>Thailand – das Land, wo Tempel den Himmel berühren und die Seele zur Ruhe kommt</h2>
+      <h3 class="box">Thailand ist berühmt für seine prachtvollen Tempel und lebendigen Traditionen. Zwischen goldenen Pagoden, stillen Landschaften und geschäftigen Städten entfaltet sich ein Lebensgefühl, das Vergangenheit und Gegenwart verbindet. Die Tempel sind bis heute Orte der Spiritualität, Ruhe und tiefer Gemeinschaft.</h3>
+      <p>TEMPEL<br>&<br>TRADITION</p>
+      <img src="watsiri.jpg" alt="watsiritempel" class="wat-siri">
+     
+    </article>
+
+    <article id="article3">
+      <h2>Streetfood & Thaiküche</h2>
+      <div class="food-gallery">
+
+        <div class="food-item">
+        <img src="mangostickyrice.jpg" alt="mango sticky rice">
+        <p>Mango Sticky Rice</p>
+      </div>
+
+      <div class="food-item">
+        <img src="tomyumsoup.jpg" alt="tom yum soup">
+        <p>Tom Yum Soup</p>
+      </div>
+
+       <div class="food-item">
+        <img src="padkrapao.jpg" alt="pad kra pao">
+        <p>Pad Kra Pao</p>
+      </div>
+
+    </div>
+    </article>
+
+      
+
+ <article id="article4" class="video-section">
+  <video controls>
+    <source src="meinvideo2.mp4" type="video/mp4">
+  </video>
+  <h2>Natur & Inselwelten</h2>
+</article>
+
+
+
+
+
+
+
+<article id="article5" class="booking-section">
+  <h2>Jetzt Traumreise buchen</h2>
+  <p></p>
+
+  <div class="slider">
+    <!-- Pfeil links -->
+    <button class="slider-btn slider-btn-left" aria-label="Vorheriges Bild">
+      &#10094;
+    </button>
+
+    <!-- Sichtfenster -->
+    <div class="slider-window">
+      <div class="slider-track">
+
+        <!-- Slide 1 -->
+        <div class="slide">
+          <img src="bangkok.jpg" alt="Bangkok bei Nacht">
+          <div class="slide-caption">Bangkok</div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide">
+          <img src="kohchang.jpg" alt="Koh Chang">
+          <div class="slide-caption">Koh Chang</div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide">
+          <img src="watsiridunkel.jpg" alt="Wat Siri Tempel">
+          <div class="slide-caption">Ubon</div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="slide">
+          <img src="chiangmainature.jpg" alt="Chiang Mai Natur">
+          <div class="slide-caption">Chiang Mai</div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="slide">
+          <img src="phuket.jpg" alt="Phuket Strand">
+          <div class="slide-caption">Phuket</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Pfeil rechts -->
+    <button class="slider-btn slider-btn-right" aria-label="Nächstes Bild">
+      &#10095;
+    </button>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+  </main>
+
+
+<script>
+  const track = document.querySelector('.slider-track');
+  const prevBtn = document.querySelector('.slider-btn-left');
+  const nextBtn = document.querySelector('.slider-btn-right');
+
+  if (track && prevBtn && nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      const firstSlide = track.firstElementChild;
+      track.appendChild(firstSlide);
+    });
+
+    prevBtn.addEventListener('click', () => {
+      const lastSlide = track.lastElementChild;
+      track.insertBefore(lastSlide, track.firstElementChild);
+    });
+  }
+</script>
+
+
+</body>
+</html>
+
+
+
+
